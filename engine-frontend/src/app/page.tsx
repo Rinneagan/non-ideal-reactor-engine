@@ -39,18 +39,18 @@ export default function Home() {
     setResult(null);
 
     try {
-      const response = await fetch("http://localhost:8000/api/solve", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          dispersion_num: dispersionNum,
-          damkohler_num: damkohlerNum,
-          reaction_order: reactionOrder,
-          mesh_points: meshPoints,
-        }),
-      });
+      const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/solve";
+
+const response = await fetch(API_URL, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    dispersion_num: dispersionNum,
+    damkohler_num: damkohlerNum,
+    reaction_order: reactionOrder,
+    mesh_points: meshPoints
+  }),
+});
 
       if (!response.ok) {
         const errorData: ErrorResponse = await response.json();
