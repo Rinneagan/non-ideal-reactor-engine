@@ -55,6 +55,5 @@ uvicorn main:app --reload
 ```bash
 cd engine-frontend
 npm install
-# Ensure .env.local points NEXT_PUBLIC_API_URL to http://localhost:8000/api/solve
 npm run dev
 ```
