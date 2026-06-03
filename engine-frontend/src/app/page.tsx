@@ -3,7 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
-const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
+const Plot: any = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 interface SolveResponse {
   x: number[];
