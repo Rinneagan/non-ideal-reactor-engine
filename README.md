@@ -5,6 +5,7 @@
 ![Next.js](https://img.shields.io/badge/Next.js-14+-black.svg)
 ![SciPy](https://img.shields.io/badge/SciPy-Numerical_Integration-orange.svg)
 
+Check the deployed site at (https://reactorengine.netlify.app/)
 ## Overview
 The Non-Ideal Reactor Dynamics Engine is a structurally decoupled web application engineered to solve the 1D Advection-Dispersion-Reaction Boundary Value Problem (BVP). 
 
